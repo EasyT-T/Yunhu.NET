@@ -1,0 +1,10 @@
+// <copyright file="VideoContent.cs" company="ZiYueCommentary / EasyT_T">
+// Copyright (c) ZiYueCommentary / EasyT_T. All rights reserved.
+// </copyright>
+
+namespace Yunhu.Content;
+
+public record VideoContent(string Url, TimeSpan Duration) : IBuildableContent
+{
+    public static ContentType Type => ContentType.Video;
+}
